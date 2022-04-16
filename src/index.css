@@ -1,0 +1,668 @@
+.flex {
+    display: flex;
+  }
+  button{
+    font-family: IRANSans;
+  }
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  * {
+    box-sizing: inherit;
+  }
+  @font-face {
+    font-family: IRANSans;
+    src: url('./IRAN\ Sans.ttf');
+  }
+  body {
+    font-family: IRANSans;
+    font-size: 16px;
+    direction: rtl;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .ul-1{
+    display: none;
+  }
+  .li-1:hover .ul-1{
+    display: block;
+  }
+
+  .flex,
+.divpedar .ulpedar {
+  display: flex;
+}
+.divpedar {
+  
+  padding: 5px;
+  direction: ltr;
+  transition: all 0.5s linear;
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgb(126, 120, 120);
+}
+.divpedar .dire {
+  display: block;
+  transition: all 0.3s linear;
+  z-index: 1;
+  background-color: #02198B;
+  box-shadow: 0px 0px 5px #00AAE5;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 10.2%;
+}
+.divpedar .ulpedar {
+  position: relative;
+  list-style-type: none;
+  margin: 0px auto;
+  z-index: 100;
+  justify-content: space-around;
+  line-height: 40px;
+  padding: 0px;
+  display: flex;
+  width: 50%;
+}
+
+.divpedar .lipedar {
+  z-index: 100;
+}
+.divpedar .lipedar:nth-child(1) a {
+  color: white;
+}
+.lipedar a{
+  color: black;
+}
+  .main-header {
+    border-radius: 20px 20px 0px 0px ;
+    background-color: black;
+    background-size: cover;
+    background-image: url(./black-background-mak-creates-web-design-services-1500-2500.jpg);
+    height: 700px;
+  }
+  .ul-shabake-ejtemaee {
+    align-items: center;
+    height: 100%;
+  }
+  .pesare-header {
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .div-menu {
+    width: 40%;
+    align-items: center;
+  }
+  .img-logo {
+    width: 100px;
+  }
+  .ul-main {
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+  }
+  .link-1:hover{
+    border-top: 3px solid #02198B;
+  }
+  .submenu-1 {
+    display: none;
+    flex-direction: column;
+    width: 100px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    right: 16%;
+    top: 11%;
+  }
+  .submenu-1 a {
+    color: black;
+  }
+  .span-1 {
+    cursor: pointer;
+  }
+  .ul-1 {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #02198B;
+    height: 300px;
+    width: 200px;
+    background-color: #02198B;
+    position: absolute;
+    top: 40px;
+  }
+  .ul-main > li {
+    margin-right: 5px;
+    padding-bottom: 10px;
+  }
+  .li-1 {
+    position: relative;
+  }
+  .vorod span {
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .vorod span:nth-child(2) {
+    background-color: #02198B;
+  }
+  .vorod span:nth-child(1) {
+    background-color: white;
+    color: black;
+  }
+  .vorod span:nth-child(1):hover {
+    background-color: #02198B;
+    color: white;
+  }
+  .mohtava-header {
+    margin-top: 50px;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+  }
+  .div-input-1 {
+    align-items: center;
+    width: 45%;
+    border-radius: 15px;
+    height: 60px;
+    background-color: white;
+  }
+  .input-1::placeholder {
+    font-family: iransans;
+    color: #575458;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .div-input-1 input {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+  }
+  .input-i {
+    background-color: #02198B;
+    padding: 15px;
+    margin-left: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .ul-icon-amozesh {
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .ul-icon-amozesh li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ul-icon-amozesh h3 {
+    margin-bottom: 0px;
+    color: white;
+    padding: 0px 15px;
+  }
+  .ul-icon-amozesh i {
+    font-size: 50px;
+    color: #000f5c;
+  }
+  .body {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .body a {
+    word-spacing: 5px;
+    color: black;
+  }
+  .jadid-dokme {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dokme-doreha {
+    text-align: center;
+    color: white !important;
+    background-color: #02198B;
+    border-radius: 15px;
+    padding: 8px 10px;
+  }
+  .dokme-doreha i{
+    padding: 5px;
+  }
+  .h3-1 {
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .jadid-dokme p {
+    color: #4b4949;
+  }
+  .li-amozesh {
+    position: relative;
+    transition: 0.2s linear;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgb(190, 187, 187);
+    width: 30%;
+  }
+  .li-amozesh:hover  .li-after{
+    transform: rotate(0deg);
+  }
+  .li-after p{
+    font-size: 11px;
+    margin: 0px;
+  }
+  .li-after{
+    transition: 0.2s linear;
+    z-index: 1;
+    transform: rotate(-40deg);
+    padding: 5px;
+    text-align: center;
+    top: -9px;
+    left: -14px;
+    position: absolute;
+    content: ' 60% تخفیف ';
+    width: 55px;
+    height: 55px;
+    background-color: #02198B;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .li2-amozesh:hover .a-bishtar-bekhanid{
+    background-color:#02198B;
+    color: white !important;
+  }
+  .li2-amozesh {
+    transition: all 0.2s linear;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgb(216, 216, 216);
+    width: 30%;
+  }
+  .li-amozesh:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px #02198B;
+  }
+  .li2-amozesh:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px #02198B;
+  }
+  .li-amozesh > h4 {
+    padding: 15px 10px;
+    margin: 0px;
+  }
+  .li-amozesh img {
+    border-radius: 4px 4px 0px 0px;
+    width: 100%;
+  }
+  .li2-amozesh img {
+    border-radius: 4px 4px 0px 0px;
+    width: 100%;
+    height: 70%;
+  }
+  .li2-amozesh p{
+    font-size: 15px;
+    padding: 10px;
+  }
+  .name-and-star {
+    padding: 0px 10px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .name-and-star > a {
+    font-size: 15px;
+    color: #6c757d;
+  }
+  .name-and-star > img {
+    width: 30%;
+  }
+  .foot-amozesh {
+    font-size: 15px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    color: #6c757d;
+    background-color: #f6f7fa;
+  }
+  .ul-amozesh {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .ul2-amozesh {
+    margin-top: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .div-img-amozesh {
+    overflow: hidden;
+    position: relative;
+  }
+  .div-img-amozesh i {
+    transition: 0.3s linear;
+    color: white;
+    position: absolute;
+    bottom: -50px;
+    right: 10px;
+    padding: 10px;
+    background-color: #57545880;
+    border-radius: 10px;
+  }
+  .div-img-amozesh i:hover {
+    background-color: #02198B;
+  }
+  .ul-takhfif>li {
+    width: 100% !important;
+    display: none;
+  }
+  .ul-takhfif .sli {
+    display: flex;
+  }
+  .img-2 img {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .img-2 .on-img-2 {
+    box-shadow: 0px 5px 15px red;
+  }
+  .ul-amozesh a:hover{
+    color: #4F9EF3;
+  }
+  .ul-takhfif{
+    width: 70%;
+  }
+  .div-ul-takhfif {
+  z-index: 100;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    box-shadow: 0px 5px 15px rgb(139, 139, 139);
+    border-radius: 10px;
+    height: 305px;
+  }
+  .div-ul-takhfif::after{
+    transform: rotate(75deg);
+    z-index: -1;
+    bottom: -5px;
+    left: 0px;
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 300px;
+    background-color: #02198B;
+    border-radius: 30px;
+  
+  }
+  .div-ul-takhfif::before{
+    transform: rotate(140deg);
+    z-index: -1;
+    top: 0px;
+    right: 30px;
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    background-color:#6c757d ;
+    border-radius: 30px;
+  }
+  .li-takhfif-img {
+    height: 11em;
+    width: 26em;
+    border-radius: 10px;
+    margin: 15px;
+  }
+  .li-takhfif-img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .div-pedar-emtyaz {
+    margin: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .div-emtaz {
+    width: 20em;
+    font-size: 16px;
+    color: #6c757d;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  .div-emtaz img {
+    width: 4em;
+  }
+  .a-price {
+    padding: 5px;
+    text-align: center;
+    height: 35px;
+    margin-top: 5px;
+    width: 130px;
+    border-radius: 5px;
+    background-color: #02198B;
+    color: white !important;
+  }
+  .ul-takhfif2{
+    width: 350px;
+    padding: 10px;
+    flex-direction: column;
+  align-items: center;  
+  justify-content: space-around;
+  }
+  .img2{
+    box-shadow: 0px 0px 10px #02198B;
+    border: 2px solid #02198B;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+  .a-takhfif2{
+    width: 100%;
+      padding: 10px;
+  opacity: .7;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    height: 30%;
+  }
+  .a-takhfif2>h4{
+    padding: 10px;
+      font-size: 15px;
+      color: white;
+  }
+   .one2{
+      opacity: 1;
+      box-shadow: 0px 0px 15px #6c757d;
+      background-color: black;
+  }
+  .li-icon{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    align-items: center;
+    width: 40%;
+    box-shadow: 0px 0px 15px #02198B;
+    height: 100px;
+  }
+  .li-icon>i{
+    font-size: 65px;
+    color: #02198B;
+    padding: 10px;
+  }
+  .ul-icon .li-icon:nth-child(2) i{
+    color: #666666;
+  }
+  .ul-icon .li-icon:nth-child(3) i{
+    color: #666666;
+  }
+  .li-icon h4{
+    margin-bottom: 0px;
+  }
+  .li-icon div{
+    padding: 10px;
+  }
+  .ul-icon{
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .h3-title{
+    padding-bottom: 30px;
+    border-radius: 50%;
+    border-bottom: 2px solid #02198B;
+    width: 250px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .a-bishtar-bekhanid{
+    text-align: center;
+    color: #02198B !important;
+    border-radius: 5px;
+    padding: 2px;
+    width: 150px;
+    font-size: 15px;
+    border: 2px solid #02198B;
+  }
+  .new-slider{
+    overflow: hidden;
+    height: 500px;
+    padding: 20px;
+  }
+  .new-slider .ul-amozesh{
+    animation: slide 16s infinite ;
+    width: 2000px;
+    flex-wrap: nowrap;
+    transform: translateX(20px);
+  }
+  .new-slider li{
+    margin: 10px;
+  }
+  @keyframes slide {
+    0% {transform: translateX(0px);}
+    20% {transform: translateX(410px);}
+    40% {transform: translateX(820px);}
+    60% {transform: translateX(1210px);}
+    80%{transform: translateX(1610px);}
+   
+   }
+  .li-amozesh:hover .i-for-amozesh{
+      bottom: 50px;
+  }
+  .div-login-grandpa{
+    height:40em ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #02198B;
+  }
+  .div-login-pedar{
+
+    position: relative;
+    width: 700px;
+    height: 350px;
+  }
+  .div-login-pesar{   
+    border-radius: 2px;
+     z-index: -100;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.829);
+  }
+  .div-sign-up{  
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: #02198B;
+  }
+
+  .div-sign-in{  
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: #4e4e4e;
+  }
+  .btn-sign
+  { 
+    padding: 5px;
+    width: 60px;
+    border: none;
+    font-family: iransans;
+    border-radius: 4px;
+  }
+  .sabt-nam{
+    z-index: 1;
+    transition: all .4s linear;
+    top: -3em;
+    position: absolute;
+    height: 450px;
+    width: 50%;
+    left: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(136, 133, 133);
+    border-radius: 4px;
+     display: flex;
+    align-items: center;
+  }
+  .foem-1{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .input-sabtnam::placeholder{
+    font-size: 11px;
+  }
+  .input-sabtnam{
+    padding: 5px;
+    font-family: iransans;
+    outline: none;
+    margin: 15px auto;
+    width:80%;
+    height: 35px;
+  }
+  .btn-form-signin{
+    width: 80px;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    margin-right:2.6em;
+    margin-top: 1em;
+    background-color: #02198B;
+    color: white;
+  }
+  .label-form-signin{
+    margin-right:2em;
+  }
+  .link-form-signin{
+    margin: 2em;
+    font-size: 13px;
+    color: black;
+  }
+  .link-form-signin:hover{
+    color: #02198B;
+  }

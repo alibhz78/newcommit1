@@ -666,3 +666,64 @@
   .link-form-signin:hover{
     color: #02198B;
   }
+  .footer{
+    background-color: #F0F2F7;
+    width: 100%;
+    border-radius: 5px;
+
+  }
+  .ul-footer{
+    width: 100%;
+    display: flex;
+  }
+  .li-footer{
+    z-index: 2;
+    position: relative;
+    font-size: 14px;
+    width: 35%;
+    margin:2em;
+  }
+  .li-footer::before{
+    z-index: -1;
+    top: 15px;
+    right: 0px;
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transform: rotate(40deg);
+    background-color: #53cef7;
+  }
+
+  .li-footer:nth-child(1) p{
+      color: #6c757d;
+    }
+.li-footer:nth-child(2){
+flex-direction: column;   
+align-items: baseline;
+ }
+ .link-footer{
+   margin: 10px;
+ }
+ .link-footer:hover{
+   color: #3a59f8;
+ }
+ .link-footer-dastresi{
+   transition: all .3s linear;
+   width: 45%;
+   margin: 5px;
+   height: 30px;
+ }
+ .link-footer-dastresi:hover{
+   color: #3a59f8;
+   transform: translateX(-10px);
+ }
+ .div-footer-1{
+   height: 50%;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .link-footer-gavanin-darbare:hover{
+  color: #3a59f8;
+ }

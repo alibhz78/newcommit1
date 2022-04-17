@@ -765,6 +765,64 @@ const Home = () => {
                 </div>
               </li>
             </ul>
+          </div>{" "}
+          <div className="footer">
+            <ul className="ul-footer">
+              <li className="li-footer">
+                <h4>درباره ما</h4>
+                <p>
+                  وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از مشکلاتی که
+                  در فرآیند یادگیری داشتم، کمبود آموزش های خوب با پشتیبانی قابل
+                  قبول بود که باعث شد اون موقع تصمیم بگیرم اگر روزی توانایی مالی
+                  و فنی قابل قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی
+                  کنم! و خب امروز آکادمی آموزش برنامه نویسی سبزلرن به عنوان یک
+                  آکادمی خصوصی فعالیت میکنه و این به این معنی هست که هر مدرسی
+                  اجازه تدریس در اون رو نداره و باید از فیلترینگ های خاص آکادمی
+                  سبزلرن رد شه! این به این معنی هست که ما برامون فن بیان و نحوه
+                  تعامل مدرس با دانشجو بسیار مهمه! ما در آکادمی سبزلرن تضمین
+                  پشتیبانی خوب و با کیفیت رو به شما میدیم . چرا که مدرسین وب
+                  سایت سبزلرن حتی برای پشتیبانی دوره های رایگان شون هم هزینه
+                  دریافت میکنند و متعهد هستند که هوای کاربر های عزیز رو داشته
+                  باشند !
+                </p>
+              </li>
+              <li className="li-footer flex">
+                <h4>آخرین مطالب</h4>{" "}
+                <Link className="link-footer" to={"/A"}>
+                  بررسی بازار کار جاوا اسکریپت | تمام روش‌ های کسب درآمد از جاوا
+                  اسکریپت
+                </Link>
+                <Link className="link-footer" to={"/A"}>
+                  معرفی بهترین دوره فرانت‌ اند | دوره جامع فرانت‌ اند
+                </Link>
+                <Link className="link-footer" to={"/A"}>
+                  افزونه کروم برای طراحان وب | افزونه ‌های مهم کروم در برنامه
+                  ‌نویسی
+                </Link>
+                <Link className="link-footer" to={"/A"}>
+                  کلین کد چیست ؟ | مزایا و اصول کد ‌نویسی تمیز چیست؟
+                </Link>
+                <Link className="link-footer" to={"/A"}>
+                  بررسی تفاوت ui و UI | ux بهتر است یا UX ؟
+                </Link>
+              </li>
+              <li className="li-footer">
+                <h4>دسترسی سریع</h4>
+                <div className="div-footer-1">
+                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش HTML</Link>
+                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش CSS</Link>
+                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش جاوا </Link>
+                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i>  آموزش بوت استرپ</Link>
+                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش ری اکت</Link>
+                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش پایتون</Link>
+                </div>
+                <Link className="link-footer-gavanin-darbare" to={'/c'}> قوانین و مقررات</Link>
+                <br />
+                <br />
+                <Link className="link-footer-gavanin-darbare" to={'/c'}>درباره ما</Link>
+
+              </li>
+            </ul>
           </div>
         </div>
       </div>

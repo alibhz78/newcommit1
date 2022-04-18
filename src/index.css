@@ -26,6 +26,13 @@
     text-decoration: none;
     color: white;
   }
+  .pesar-ul-1{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
   .ul-1{
     display: none;
   }
@@ -135,7 +142,7 @@
     box-shadow: 0px 0px 5px #02198B;
     height: 300px;
     width: 200px;
-    background-color: #02198B;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 40px;
   }
@@ -255,6 +262,7 @@
   .li-amozesh:hover  .li-after{
     transform: rotate(0deg);
   }
+
   .li-after p{
     font-size: 11px;
     margin: 0px;
@@ -726,4 +734,90 @@ align-items: baseline;
  }
  .link-footer-gavanin-darbare:hover{
   color: #3a59f8;
+ }
+ .link-ul-1{
+   color: #02198B;
+ }
+ @media (min-width:395px) and (max-width:420px) {
+  .divpedar .ulpedar {
+    width: 100%;
+  }
+  .lipedar{
+    transform: translateX(7px);
+  }
+  .ul-main{
+    display: none;
+  }
+  .vorod{
+    justify-content: flex-end;
+    height: 40px;
+    display: flex;
+    width: 300px;
+  }
+  .vorod span{
+    text-align: center;
+  }
+  .vorod span:nth-child(2){
+    font-size: 13px;
+  }
+  .mohtava-header h2{
+    font-size: 15px;
+  }
+  .mohtava-header h4{
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .div-input-1{
+    width: 80%;
+    height: 40px;
+  }
+  .input-i{
+    font-size: 12px;
+    padding: 12px;
+  }
+  .ul-icon-amozesh{
+    margin-top: 50px;
+  }
+  .ul-icon-amozesh h3{
+    font-size: 13px;
+    text-align: center;
+  }
+  .h3-1{
+    width: 150px;
+    font-size: 15px;
+  }
+  .dokme-doreha{
+    width: 100px;
+    font-size: 10.5px;
+    padding: 8px 5px;
+  }
+  .jadid-dokme p{
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .li-amozesh{
+    width: 100%;
+  }
+  .div-ul-takhfif{
+    display: none;
+  }
+  .li-icon{
+    width: 100%;
+  }
+  .li-icon p{
+    font-size: 13px;
+  }
+  .li2-amozesh{
+    width: 100%;
+  }
+  @keyframes slide {
+    0% {transform: translateX(10px);}
+    20% {transform: translateX(430px);}
+    40% {transform: translateX(830px);}
+    60% {transform: translateX(1215px);}
+    80%{transform: translateX(1615px);}
+   
+   }
  }

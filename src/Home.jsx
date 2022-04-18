@@ -4,28 +4,28 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="main-div">
+      <div id="main-div" className="main-div">
         {" "}
         <div id="divpedar" className="divpedar">
           <ul className="ulpedar">
             <li className="lipedar">
-              <Link className="a" to={"/1"}>
+              <Link className="a" to={"/"}>
                 <i class="fa fa-instagram icon9" aria-hidden="true"></i>
               </Link>
             </li>
             <li className="lipedar">
-              <Link className="a" to={"/2"}>
+              <Link className="a" to={"/"}>
                 <i className="fa fa-envelope icon9" aria-hidden="true"></i>
               </Link>
             </li>
             <li className="lipedar">
-              <Link className="a" to={"/3"}>
+              <Link className="a" to={"/"}>
                 {" "}
                 <i className="fa fa-phone icon9" aria-hidden="true"></i>
               </Link>
             </li>
             <li className="lipedar">
-              <Link className="a" to={"/4"}>
+              <Link className="a" to={"/"}>
                 {" "}
                 <i class="fa fa-telegram icon9" aria-hidden="true"></i>
               </Link>
@@ -55,21 +55,22 @@ const Home = () => {
                   </Link>
 
                   <div className="ul-1">
-                    <ul>
+                    <ul className="pesar-ul-1">
                       <li>
-                        <a href="#">PHP</a>
+                        <Link className="link-ul-1" to={'/n'}>php</Link>
+                        
                       </li>
                       <li>
-                        <a href="#">js</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                       <li>
-                        <a href="#">CSS</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                       <li>
-                        <a href="#">HTML</a>
+                      <Link className="link-ul-1" to={'/n'}>php5</Link>
                       </li>
                       <li>
-                        <a href="#">JQ</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                     </ul>
                   </div>
@@ -80,21 +81,21 @@ const Home = () => {
                   </Link>
 
                   <div className="ul-1">
-                    <ul>
+                    <ul className="pesar-ul-1">
                       <li>
-                        <a href="#">PHP</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                       <li>
-                        <a href="#">js</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                       <li>
-                        <a href="#">CSS</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                       <li>
-                        <a href="#">HTML</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                       <li>
-                        <a href="#">JQ</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                     </ul>
                   </div>
@@ -105,21 +106,21 @@ const Home = () => {
                   </Link>
 
                   <div className="ul-1">
-                    <ul>
+                    <ul className="pesar-ul-1">
                       <li>
-                        <a href="#">PHP</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                       <li>
-                        <a href="#">js</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                       <li>
-                        <a href="#">CSS</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                       <li>
-                        <a href="#">HTML</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                       <li>
-                        <a href="#">JQ</a>
+                      <Link className="link-ul-1" to={'/n'}>php</Link>
                       </li>
                     </ul>
                   </div>

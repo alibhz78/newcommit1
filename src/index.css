@@ -50,8 +50,8 @@
   direction: ltr;
   transition: all 0.5s linear;
   width: 100%;
-  height: 50px;
   margin: 10px auto;
+  height: 50px;
   border-radius: 20px;
   box-shadow: 0px 0px 5px rgb(126, 120, 120);
 }
@@ -738,7 +738,7 @@ align-items: baseline;
  .link-ul-1{
    color: #02198B;
  }
- @media (min-width:395px) and (max-width:420px) {
+ @media (min-width:395px) and (max-width:450px) {
   .divpedar .ulpedar {
     width: 100%;
   }
@@ -798,7 +798,8 @@ align-items: baseline;
     font-size: 14px;
   }
   .li-amozesh{
-    width: 100%;
+    margin: 15px;
+    width: 90%;
   }
   .div-ul-takhfif{
     display: none;
@@ -812,12 +813,59 @@ align-items: baseline;
   .li2-amozesh{
     width: 100%;
   }
+  .li-after{
+    width: 45px;
+    height: 45px;
+    font-size: 12px;
+
+  }
+  .name-and-star > img{
+    width: 25%;
+  }
+  .new-slider li{
+    width: 15%;
+  }
   @keyframes slide {
-    0% {transform: translateX(10px);}
-    20% {transform: translateX(430px);}
-    40% {transform: translateX(830px);}
-    60% {transform: translateX(1215px);}
-    80%{transform: translateX(1615px);}
+    0% {transform: translateX(5px);}
+    20% {transform: translateX(440px);}
+    40% {transform: translateX(860px);}
+    60% {transform: translateX(1270px);}
+    80%{transform: translateX(1690px);}
    
    }
+   .ul-footer{
+     margin-bottom: 70px;
+     flex-direction: column;
+     width: 100%;
+   }
+   .li-footer{
+     font-size: 13px;
+     width: 92%;
+   }
+   .li-footer p{
+     font-size: 12px;
+     padding: 10px;
+   }
+   .main-div{
+     position: relative;
+   }
+   .menu-responsiv{
+     margin-bottom: 10px;
+     z-index: 100;
+     bottom: 0px;
+     right: 20px;
+     position: fixed;
+     background-color: #F0F2F7;
+     width: 90%;
+     height: 50px;
+     border-radius: 20px;
+     box-shadow: 0px 0px 5px rgb(194, 190, 190);
+   }
+
+ }
+
+ @media (min-width:430px) and (max-width:450px){
+.lipedar{
+    transform: translateX(6px);
+  }
  }

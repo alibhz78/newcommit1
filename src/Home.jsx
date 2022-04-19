@@ -616,7 +616,7 @@ const Home = () => {
           </ul>
           <div className="new-slider">
             <ul className="ul-amozesh ul-slider flex">
-              <li className="li-amozesh ">
+              <li className="li-amozesh li-amozesh-2  ">
                 <div className=" li-after">
                   <p>پیشنهاد ویژه</p>
                 </div>
@@ -647,7 +647,7 @@ const Home = () => {
                   <span>380,000</span>
                 </div>
               </li>
-              <li className="li-amozesh ">
+              <li className="li-amozesh li-amozesh-2">
                 <div className="div-img-amozesh">
                   <img src={require("./cec1e10e3be4.webp")} alt="" />
                   <a href="">
@@ -675,7 +675,7 @@ const Home = () => {
                   <span>380,000</span>
                 </div>
               </li>
-              <li className="li-amozesh ">
+              <li className="li-amozesh li-amozesh-2">
                 <div className=" li-after">
                   20% <p>تخفیف</p>
                 </div>
@@ -706,7 +706,7 @@ const Home = () => {
                   <span>380,000</span>
                 </div>
               </li>
-              <li className="li-amozesh ">
+              <li className="li-amozesh li-amozesh-2">
                 <div className="div-img-amozesh">
                   <img src={require("./cec1e10e3be4.webp")} alt="" />
                   <a href="">
@@ -734,7 +734,7 @@ const Home = () => {
                   <span>380,000</span>
                 </div>
               </li>
-              <li className="li-amozesh ">
+              <li className="li-amozesh li-amozesh-2">
                 <div className=" li-after">
                   60%<p>تخفیف</p>
                 </div>
@@ -826,6 +826,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
+        <div className="menu-responsiv"></div>
       </div>
     </>
   );

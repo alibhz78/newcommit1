@@ -738,7 +738,7 @@ align-items: baseline;
  .link-ul-1{
    color: #02198B;
  }
- @media (min-width:395px) and (max-width:450px) {
+ @media (min-width:320px) and (max-width:450px) {
   .divpedar .ulpedar {
     width: 100%;
   }
@@ -752,16 +752,17 @@ align-items: baseline;
     justify-content: flex-end;
     height: 40px;
     display: flex;
-    width: 300px;
+    width: 200px;
   }
   .vorod span{
     text-align: center;
   }
   .vorod span:nth-child(2){
-    font-size: 13px;
+    font-size: 70%;
+    width: 50%;
   }
   .mohtava-header h2{
-    font-size: 15px;
+    font-size: 80%;
   }
   .mohtava-header h4{
     padding: 5px;
@@ -781,7 +782,7 @@ align-items: baseline;
     margin-top: 50px;
   }
   .ul-icon-amozesh h3{
-    font-size: 13px;
+    font-size: 70%;
     text-align: center;
   }
   .h3-1{
@@ -789,13 +790,13 @@ align-items: baseline;
     font-size: 15px;
   }
   .dokme-doreha{
-    width: 100px;
-    font-size: 10.5px;
+    width: 35%;
+    font-size:48%;
     padding: 8px 5px;
   }
   .jadid-dokme p{
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 80%;
   }
   .li-amozesh{
     margin: 15px;
@@ -808,7 +809,7 @@ align-items: baseline;
     width: 100%;
   }
   .li-icon p{
-    font-size: 13px;
+    font-size: 65%;
   }
   .li2-amozesh{
     width: 100%;
@@ -821,6 +822,12 @@ align-items: baseline;
   }
   .name-and-star > img{
     width: 25%;
+  }
+  .li2-amozesh{
+    font-size: 70%;
+  }
+  .li2-amozesh p{
+    font-size: 90%;
   }
   .new-slider li{
     width: 15%;
@@ -839,7 +846,7 @@ align-items: baseline;
      width: 100%;
    }
    .li-footer{
-     font-size: 13px;
+     font-size: 70%;
      width: 92%;
    }
    .li-footer p{
@@ -861,6 +868,9 @@ align-items: baseline;
      border-radius: 20px;
      box-shadow: 0px 0px 5px rgb(194, 190, 190);
    }
+   .li-amozesh h4{
+     font-size: 70%;
+   }
 
  }
 
@@ -869,3 +879,16 @@ align-items: baseline;
     transform: translateX(6px);
   }
  }
+@media (min-width:320px) and (max-width:350px){
+  .new-slider li{
+    width: 12%;
+  }
+  @keyframes slide {
+    0% {transform: translateX(5px);}
+    20% {transform: translateX(440px);}
+    40% {transform: translateX(890px);}
+    60% {transform: translateX(1320px);}
+    80%{transform: translateX(1760px);}
+   
+   }
+}

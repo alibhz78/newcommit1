@@ -175,7 +175,7 @@ const Home = () => {
           <div className="jadid-dokme flex">
             <div>
               <h3 className="h3-1">جدیدترین دوره ها</h3>
-              <p>سکوی پرتاپ شما به سمت موفقیت</p>
+              <p>سکوی پرتاپ شما به موفقیت</p>
             </div>
             <a className="dokme-doreha" href="">
               تمام دوره ها
@@ -813,7 +813,7 @@ const Home = () => {
                   <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش HTML</Link>
                   <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش CSS</Link>
                   <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش جاوا </Link>
-                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i>  آموزش بوت استرپ</Link>
+                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i>  آموزش استرپ</Link>
                   <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش ری اکت</Link>
                   <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش پایتون</Link>
                 </div>

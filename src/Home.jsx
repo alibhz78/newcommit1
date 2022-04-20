@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { Link,NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <>
@@ -826,7 +825,23 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div className="menu-responsiv"></div>
+        <div className="menu-responsiv">
+          <ul className="ul-menu-footer">
+            <li> <NavLink style={({isActive})=>{
+              return {backgroundColor:isActive?'#53CEF7':'#F0F2F7',color:isActive?'white':'black'}
+            }} className='navlink-footer' to={'/home'}><i class="fa fa-home" aria-hidden="true"></i></NavLink></li>
+            <li> <NavLink style={({isActive})=>{
+              return {backgroundColor:isActive?'#53CEF7':'#F0F2F7',color:isActive?'white':'black'}
+            }} className='navlink-footer' to={'/Frontend'}><i class="fa fa-code" aria-hidden="true"></i></NavLink></li>
+            <li> <NavLink  style={({isActive})=>{
+              return {backgroundColor:isActive?'#53CEF7':'#F0F2F7',color:isActive?'white':'black'}
+            }} className='navlink-footer' to={'/magalat'}><i class="fa fa-archive" aria-hidden="true"></i></NavLink></li>
+            <li> <NavLink  style={({isActive})=>{
+              return {backgroundColor:isActive?'#53CEF7':'#F0F2F7',color:isActive?'white':'black'}
+            }}   className='navlink-footer' to={'/security'}><i class="fa fa-shield" aria-hidden="true"></i></NavLink></li>
+          </ul>
+
+        </div>
       </div>
     </>
   );

@@ -738,6 +738,9 @@ align-items: baseline;
  .link-ul-1{
    color: #02198B;
  }
+ .menu-responsiv{
+   display: none;
+ }
  @media (min-width:320px) and (max-width:450px) {
   .divpedar .ulpedar {
     width: 100%;
@@ -870,6 +873,31 @@ align-items: baseline;
    }
    .li-amozesh h4{
      font-size: 70%;
+   }
+   .name-and-star > a{
+     font-size: 80%;
+   }
+   .ul-menu-footer{
+     height: 100%;
+     align-items: center;
+     width: 100%;
+     justify-content: space-around;
+     display: flex;
+   }
+   .navlink-footer{
+     border-radius: 50%;
+     padding: 4px 8px;
+     font-size: 16px;
+   }
+   .input-1{
+     padding: 10px;
+     font-size: 15px;
+   }
+   .input-1::placeholder{
+     font-size: 12px;
+   }
+   .menu-responsiv{
+     display: block;
    }
 
  }

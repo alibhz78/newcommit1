@@ -1,5 +1,6 @@
 import React from "react";
 import { Link,NavLink } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 const Home = () => {
   return (
     <>
@@ -8,12 +9,12 @@ const Home = () => {
         <div id="divpedar" className="divpedar">
           <ul className="ulpedar">
             <li className="lipedar">
-              <Link className="a" to={"/"}>
+              <Link  className="a" to={"/Instegram"}>
                 <i class="fa fa-instagram icon9" aria-hidden="true"></i>
               </Link>
             </li>
             <li className="lipedar">
-              <Link className="a" to={"/"}>
+              <Link className="a" to={"/Gmail"}>
                 <i className="fa fa-envelope icon9" aria-hidden="true"></i>
               </Link>
             </li>
@@ -33,6 +34,7 @@ const Home = () => {
           </ul>
         </div>
         <header className="main-header">
+        <Outlet/>
           <div className="pesare-header flex">
             <div className="div-menu flex">
               <img

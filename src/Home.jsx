@@ -19,13 +19,13 @@ const Home = () => {
               </Link>
             </li>
             <li className="lipedar">
-              <Link className="a" to={"/"}>
+              <Link className="a" to={"/Whatsapp"}>
                 {" "}
-                <i className="fa fa-phone icon9" aria-hidden="true"></i>
+                <i className="fa fa-whatsapp icon9" aria-hidden="true"></i>
               </Link>
             </li>
             <li className="lipedar">
-              <Link className="a" to={"/"}>
+              <Link className="a" to={"/Telegram"}>
                 {" "}
                 <i class="fa fa-telegram icon9" aria-hidden="true"></i>
               </Link>

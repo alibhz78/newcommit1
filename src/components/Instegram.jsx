@@ -10,7 +10,7 @@ const Instegram = () => {
           </div>
           <h3> ما را در اینستاگرام دنبال کنید</h3>
           <h5>کلی کلیپ آموزنده همراه با آموزش</h5>
-          <button className="btn-instagram">
+          <button className="btn-shabake instagram-btn">
             <a href="##"> رفتن ب لینک</a>
           </button>
         </div>

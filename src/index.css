@@ -757,6 +757,16 @@ align-items: baseline;
    background-image: url(./black-background-mak-creates-web-design-services-1500-2500.jpg);
    background-size: cover;
  }
+ .telegram{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    border-radius: 20px;
+width: 300px;
+background-size: cover;
+height: 400px;
+background-color: white;
+ }
  .instagram{
    display: flex;
    flex-direction: column;
@@ -768,24 +778,29 @@ background-size: cover;
 height: 400px;
 background-image:url(./instagram-free-vector.jpg);
  }
- .btn-instagram{
+ .btn-shabake{
+   margin-top: 10px;
    color: black;
    padding: 5px;
    border: none;
-   box-shadow: 0px 0px 5px rgb(185, 181, 181);
+   box-shadow: 0px 0px 5px rgb(167, 167, 167);
    border-radius: 5px;
 
  }
- .btn-instagram a{
+ .btn-shabake a{
    color: black;
  }
- .btn-instagram:hover a{
+ .btn-shabake:hover a{
    color: white;
  }
- .btn-instagram:hover{
-   color: white;
-  background-size: cover;
-   background-image: url(./instagram-free-vector.jpg);
+ .instagram-btn:hover{
+ background-color: #8449E3;
+ }
+ .whatsapp-btn:hover{
+   background-color: #24CC63;
+ }
+ .whatsapp{
+   color: #24CC63;
  }
  .insta-icon{
    font-size: 100px;
@@ -794,9 +809,26 @@ background-image:url(./instagram-free-vector.jpg);
  .span-close{
    cursor: pointer;
  }
+ .tel-icon img{
+   margin-top: 30px;
+   width: 200px;
+   height: 100px;
+ }
+ .telegram-btn:hover{
+   background-color: #33AADE;
+ }
  @media (min-width:320px) and (max-width:450px) {
+   .pedar-instagram h3{
+     font-size: 14px;
+   }
   .div-login-pedar{
     padding: 10px;
+  }
+  .pedar-instagram{
+    height: 900px;
+  }
+  .div-login-grandpa{
+    height: 900px;
   }
   .div-login-pedar h3{
     font-size: 11px;
@@ -963,6 +995,9 @@ background-image:url(./instagram-free-vector.jpg);
    }
    .instagram{
      width: 250px;
+   }
+   .telegram{
+    width: 250px;
    }
 
  }

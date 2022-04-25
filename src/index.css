@@ -795,6 +795,15 @@ background-image:url(./instagram-free-vector.jpg);
    cursor: pointer;
  }
  @media (min-width:320px) and (max-width:450px) {
+  .div-login-pedar{
+    padding: 10px;
+  }
+  .div-login-pedar h3{
+    font-size: 11px;
+  }
+  .link-form-signin{
+    font-size: 11px;
+  }
   .divpedar .ulpedar {
     width: 100%;
   }

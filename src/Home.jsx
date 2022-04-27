@@ -1,4 +1,8 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import "swiper/css";
+import "swiper/css/pagination";
 import { Link,NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 const Home = () => {
@@ -615,159 +619,186 @@ const Home = () => {
               </a>
             </li>
           </ul>
-          <div className="new-slider">
-            <ul className="ul-amozesh ul-slider flex">
-              <li className="li-amozesh li-amozesh-2  ">
-                <div className=" li-after">
-                  <p>پیشنهاد ویژه</p>
-                </div>
-                <div className="div-img-amozesh">
-                  <img src={require("./cec1e10e3be4.webp")} alt="" />
-                  <a href="">
-                    <i
-                      className="fa fa-play i-for-amozesh"
-                      aria-hidden="true"
-                    ></i>
-                  </a>
-                </div>
+          <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+        <li className="li-amozesh li-swiper">
+              <div className="div-img-amozesh">
+                <img src={require("./cec1e10e3be4.webp")} alt="" />
+                <a href="">
+                  <i
+                    className="fa fa-play i-for-amozesh"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
 
-                <h4>
-                  <a href="">دوره جامع متخصص php [2022]</a>
-                </h4>
-                <div className="name-and-star flex">
-                  <a href="">
-                    <i className="fa fa-television" aria-hidden="true"></i> آرین
-                    شجاعی
-                  </a>
-                  <img src={require("./kindpng_115096.png")} alt="" />
-                </div>
-                <div className="foot-amozesh flex">
-                  <span>
-                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                  </span>
-                  <span>380,000</span>
-                </div>
-              </li>
-              <li className="li-amozesh li-amozesh-2">
-                <div className="div-img-amozesh">
-                  <img src={require("./cec1e10e3be4.webp")} alt="" />
-                  <a href="">
-                    <i
-                      className="fa fa-play i-for-amozesh"
-                      aria-hidden="true"
-                    ></i>
-                  </a>
-                </div>
+              <h4>
+                <a href="">دوره جامع متخصص php [2022]</a>
+              </h4>
+              <div className="name-and-star flex">
+                <a href="">
+                  <i className="fa fa-television" aria-hidden="true"></i> آرین
+                  شجاعی
+                </a>
+                <img src={require("./kindpng_115096.png")} alt="" />
+              </div>
+              <div className="foot-amozesh flex">
+                <span>
+                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                </span>
+                <span>380,000</span>
+              </div>
+            </li>
+        </SwiperSlide>
+        <SwiperSlide>  <li className="li-amozesh li-swiper">
+              <div className="div-img-amozesh">
+                <img src={require("./cec1e10e3be4.webp")} alt="" />
+                <a href="">
+                  <i
+                    className="fa fa-play i-for-amozesh"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
 
-                <h4>
-                  <a href="">دوره جامع متخصص php [2022]</a>
-                </h4>
-                <div className="name-and-star flex">
-                  <a href="">
-                    <i className="fa fa-television" aria-hidden="true"></i> آرین
-                    شجاعی
-                  </a>
-                  <img src={require("./kindpng_115096.png")} alt="" />
-                </div>
-                <div className="foot-amozesh flex">
-                  <span>
-                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                  </span>
-                  <span>380,000</span>
-                </div>
-              </li>
-              <li className="li-amozesh li-amozesh-2">
-                <div className=" li-after">
-                  20% <p>تخفیف</p>
-                </div>
-                <div className="div-img-amozesh">
-                  <img src={require("./cec1e10e3be4.webp")} alt="" />
-                  <a href="">
-                    <i
-                      className="fa fa-play i-for-amozesh"
-                      aria-hidden="true"
-                    ></i>
-                  </a>
-                </div>
+              <h4>
+                <a href="">دوره جامع متخصص php [2022]</a>
+              </h4>
+              <div className="name-and-star flex">
+                <a href="">
+                  <i className="fa fa-television" aria-hidden="true"></i> آرین
+                  شجاعی
+                </a>
+                <img src={require("./kindpng_115096.png")} alt="" />
+              </div>
+              <div className="foot-amozesh flex">
+                <span>
+                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                </span>
+                <span>380,000</span>
+              </div>
+            </li></SwiperSlide>
+        <SwiperSlide><li className="li-amozesh li-swiper">
+              <div className="div-img-amozesh">
+                <img src={require("./cec1e10e3be4.webp")} alt="" />
+                <a href="">
+                  <i
+                    className="fa fa-play i-for-amozesh"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
 
-                <h4>
-                  <a href="">دوره جامع متخصص php [2022]</a>
-                </h4>
-                <div className="name-and-star flex">
-                  <a href="">
-                    <i className="fa fa-television" aria-hidden="true"></i> آرین
-                    شجاعی
-                  </a>
-                  <img src={require("./kindpng_115096.png")} alt="" />
-                </div>
-                <div className="foot-amozesh flex">
-                  <span>
-                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                  </span>
-                  <span>380,000</span>
-                </div>
-              </li>
-              <li className="li-amozesh li-amozesh-2">
-                <div className="div-img-amozesh">
-                  <img src={require("./cec1e10e3be4.webp")} alt="" />
-                  <a href="">
-                    <i
-                      className="fa fa-play i-for-amozesh"
-                      aria-hidden="true"
-                    ></i>
-                  </a>
-                </div>
+              <h4>
+                <a href="">دوره جامع متخصص php [2022]</a>
+              </h4>
+              <div className="name-and-star flex">
+                <a href="">
+                  <i className="fa fa-television" aria-hidden="true"></i> آرین
+                  شجاعی
+                </a>
+                <img src={require("./kindpng_115096.png")} alt="" />
+              </div>
+              <div className="foot-amozesh flex">
+                <span>
+                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                </span>
+                <span>380,000</span>
+              </div>
+            </li></SwiperSlide>
+        <SwiperSlide><li className="li-amozesh li-swiper">
+              <div className="div-img-amozesh">
+                <img src={require("./cec1e10e3be4.webp")} alt="" />
+                <a href="">
+                  <i
+                    className="fa fa-play i-for-amozesh"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
 
-                <h4>
-                  <a href="">دوره جامع متخصص php [2022]</a>
-                </h4>
-                <div className="name-and-star flex">
-                  <a href="">
-                    <i className="fa fa-television" aria-hidden="true"></i> آرین
-                    شجاعی
-                  </a>
-                  <img src={require("./kindpng_115096.png")} alt="" />
-                </div>
-                <div className="foot-amozesh flex">
-                  <span>
-                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                  </span>
-                  <span>380,000</span>
-                </div>
-              </li>
-              <li className="li-amozesh li-amozesh-2">
-                <div className=" li-after">
-                  60%<p>تخفیف</p>
-                </div>
-                <div className="div-img-amozesh">
-                  <img src={require("./cec1e10e3be4.webp")} alt="" />
-                  <a href="">
-                    <i
-                      className="fa fa-play i-for-amozesh"
-                      aria-hidden="true"
-                    ></i>
-                  </a>
-                </div>
+              <h4>
+                <a href="">دوره جامع متخصص php [2022]</a>
+              </h4>
+              <div className="name-and-star flex">
+                <a href="">
+                  <i className="fa fa-television" aria-hidden="true"></i> آرین
+                  شجاعی
+                </a>
+                <img src={require("./kindpng_115096.png")} alt="" />
+              </div>
+              <div className="foot-amozesh flex">
+                <span>
+                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                </span>
+                <span>380,000</span>
+              </div>
+            </li></SwiperSlide>
+        <SwiperSlide><li className="li-amozesh li-swiper">
+              <div className="div-img-amozesh">
+                <img src={require("./cec1e10e3be4.webp")} alt="" />
+                <a href="">
+                  <i
+                    className="fa fa-play i-for-amozesh"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
 
-                <h4>
-                  <a href="">دوره جامع متخصص php [2022]</a>
-                </h4>
-                <div className="name-and-star flex">
-                  <a href="">
-                    <i className="fa fa-television" aria-hidden="true"></i> آرین
-                    شجاعی
-                  </a>
-                  <img src={require("./kindpng_115096.png")} alt="" />
-                </div>
-                <div className="foot-amozesh flex">
-                  <span>
-                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                  </span>
-                  <span>380,000</span>
-                </div>
-              </li>
-            </ul>
-          </div>{" "}
+              <h4>
+                <a href="">دوره جامع متخصص php [2022]</a>
+              </h4>
+              <div className="name-and-star flex">
+                <a href="">
+                  <i className="fa fa-television" aria-hidden="true"></i> آرین
+                  شجاعی
+                </a>
+                <img src={require("./kindpng_115096.png")} alt="" />
+              </div>
+              <div className="foot-amozesh flex">
+                <span>
+                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                </span>
+                <span>380,000</span>
+              </div>
+            </li></SwiperSlide>
+        <SwiperSlide><li className="li-amozesh li-swiper">
+              <div className="div-img-amozesh">
+                <img src={require("./cec1e10e3be4.webp")} alt="" />
+                <a href="">
+                  <i
+                    className="fa fa-play i-for-amozesh"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
+
+              <h4>
+                <a href="">دوره جامع متخصص php [2022]</a>
+              </h4>
+              <div className="name-and-star flex">
+                <a href="">
+                  <i className="fa fa-television" aria-hidden="true"></i> آرین
+                  شجاعی
+                </a>
+                <img src={require("./kindpng_115096.png")} alt="" />
+              </div>
+              <div className="foot-amozesh flex">
+                <span>
+                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                </span>
+                <span>380,000</span>
+              </div>
+            </li></SwiperSlide>
+      </Swiper>
           <div className="footer">
             <ul className="ul-footer">
               <li className="li-footer">

@@ -29,7 +29,7 @@ $(document).ready(function () {
       $(".ul-takhfif").find("li").last().removeClass("sli");
     }
   }, 2000);
-$(".lipedar:nth-child(2)").mousemove(function (e) { 
+/*$(".lipedar:nth-child(2)").mousemove(function (e) { 
     $(".icon9:nth-child(1)").css({
     color:'black'
   })
@@ -93,5 +93,5 @@ color:'white'
 
   
     
-  });
+  });*/
 });

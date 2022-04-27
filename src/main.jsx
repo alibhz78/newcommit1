@@ -8,7 +8,7 @@ const Main = () => {
     document.getElementById('sabt-nam')
     .style.transform="translateX(100%)";
     setcapmpare(false);
-    document.getElementById('div-login-grandpa').style.backgroundColor=" #4e4e4e"
+    document.getElementById('div-login-grandpa').style.backgroundColor=" #191B1B"
    
   }
   const signin=()=>{

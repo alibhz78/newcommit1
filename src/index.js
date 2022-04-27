@@ -1,4 +1,5 @@
 import React from "react";
+import "swiper/css/bundle";
 import ReactDOM from "react-dom";
 import "./index.css";
 import Home from "./Home";

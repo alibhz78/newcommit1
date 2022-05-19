@@ -5,7 +5,6 @@ const Signin = () => {
   return (
     <>
     <form className='foem-1' action="">
-      <i class="fa fa-user-o" aria-hidden="true"></i>
       <input className='input-sabtnam' type="text" placeholder=' نام کاربری'  />
       <input className='input-sabtnam' type="text" placeholder='رمز ورود' />
       <button className='btn-form-signin'>وارد شوید</button>

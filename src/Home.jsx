@@ -1,11 +1,34 @@
 import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { useRef } from "react";
+import { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Link,NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 const Home = () => {
+  const dir=useRef()
+  const moshtarak=useRef()
+  const whatsap=useRef()
+  const tel=useRef()
+  const insta=useRef()
+  const gotowhatsap=()=>{
+    dir.current.style="left:60%"
+    whatsap.current.style.color="white"
+  }
+  const gototelegram=()=>{
+    dir.current.style="left:85.2%"
+    tel.current.style.color="white"
+  }
+  const gotoinsta=()=>{
+    dir.current.style="left:10.2%"
+    insta.current.style.color="white"
+  }
+  
+  useEffect(() => {
+ 
+  }, []);
   return (
     <>
       <div id="main-div" className="main-div">
@@ -13,8 +36,8 @@ const Home = () => {
         <div id="divpedar" className="divpedar">
           <ul className="ulpedar">
             <li className="lipedar">
-              <Link  className="a" to={"/Instegram"}>
-                <i class="fa fa-instagram icon9" aria-hidden="true"></i>
+              <Link className="a" to={"/Instegram"}>
+                <i ref={insta} class="fa fa-instagram icon9" aria-hidden="true"></i>
               </Link>
             </li>
             <li className="lipedar">
@@ -22,23 +45,23 @@ const Home = () => {
                 <i className="fa fa-envelope icon9" aria-hidden="true"></i>
               </Link>
             </li>
-            <li className="lipedar">
+            <li className="lipedar liWhatsapp">
               <Link className="a" to={"/Whatsapp"}>
                 {" "}
-                <i className="fa fa-whatsapp icon9" aria-hidden="true"></i>
+                <i ref={whatsap} className="fa fa-whatsapp icon9" aria-hidden="true"></i>
               </Link>
             </li>
             <li className="lipedar">
               <Link className="a" to={"/Telegram"}>
                 {" "}
-                <i class="fa fa-telegram icon9" aria-hidden="true"></i>
+                <i ref={tel} class="fa fa-telegram icon9" aria-hidden="true"></i>
               </Link>
             </li>
-            <div id="dir" className="dire"></div>
+            <div ref={dir} id="dir" className="dire"></div>
           </ul>
         </div>
         <header className="main-header">
-        <Outlet/>
+          <Outlet />
           <div className="pesare-header flex">
             <div className="div-menu flex">
               <img
@@ -62,20 +85,29 @@ const Home = () => {
                   <div className="ul-1">
                     <ul className="pesar-ul-1">
                       <li>
-                        <Link className="link-ul-1" to={'/n'}>php</Link>
-                        
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php5</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php5
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -88,19 +120,29 @@ const Home = () => {
                   <div className="ul-1">
                     <ul className="pesar-ul-1">
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -113,19 +155,29 @@ const Home = () => {
                   <div className="ul-1">
                     <ul className="pesar-ul-1">
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                       <li>
-                      <Link className="link-ul-1" to={'/n'}>php</Link>
+                        <Link className="link-ul-1" to={"/n"}>
+                          php
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -620,185 +672,196 @@ const Home = () => {
             </li>
           </ul>
           <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-        <li className="li-amozesh li-swiper">
-              <div className="div-img-amozesh">
-                <img src={require("./cec1e10e3be4.webp")} alt="" />
-                <a href="">
-                  <i
-                    className="fa fa-play i-for-amozesh"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <li className="li-amozesh li-swiper">
+                <div className="div-img-amozesh">
+                  <img src={require("./cec1e10e3be4.webp")} alt="" />
+                  <a href="">
+                    <i
+                      className="fa fa-play i-for-amozesh"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </div>
 
-              <h4>
-                <a href="">دوره جامع متخصص php [2022]</a>
-              </h4>
-              <div className="name-and-star flex">
-                <a href="">
-                  <i className="fa fa-television" aria-hidden="true"></i> آرین
-                  شجاعی
-                </a>
-                <img src={require("./kindpng_115096.png")} alt="" />
-              </div>
-              <div className="foot-amozesh flex">
-                <span>
-                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                </span>
-                <span>380,000</span>
-              </div>
-            </li>
-        </SwiperSlide>
-        <SwiperSlide>  <li className="li-amozesh li-swiper">
-              <div className="div-img-amozesh">
-                <img src={require("./cec1e10e3be4.webp")} alt="" />
-                <a href="">
-                  <i
-                    className="fa fa-play i-for-amozesh"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
+                <h4>
+                  <a href="">دوره جامع متخصص php [2022]</a>
+                </h4>
+                <div className="name-and-star flex">
+                  <a href="">
+                    <i className="fa fa-television" aria-hidden="true"></i> آرین
+                    شجاعی
+                  </a>
+                  <img src={require("./kindpng_115096.png")} alt="" />
+                </div>
+                <div className="foot-amozesh flex">
+                  <span>
+                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                  </span>
+                  <span>380,000</span>
+                </div>
+              </li>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <li className="li-amozesh li-swiper">
+                <div className="div-img-amozesh">
+                  <img src={require("./cec1e10e3be4.webp")} alt="" />
+                  <a href="">
+                    <i
+                      className="fa fa-play i-for-amozesh"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </div>
 
-              <h4>
-                <a href="">دوره جامع متخصص php [2022]</a>
-              </h4>
-              <div className="name-and-star flex">
-                <a href="">
-                  <i className="fa fa-television" aria-hidden="true"></i> آرین
-                  شجاعی
-                </a>
-                <img src={require("./kindpng_115096.png")} alt="" />
-              </div>
-              <div className="foot-amozesh flex">
-                <span>
-                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                </span>
-                <span>380,000</span>
-              </div>
-            </li></SwiperSlide>
-        <SwiperSlide><li className="li-amozesh li-swiper">
-              <div className="div-img-amozesh">
-                <img src={require("./cec1e10e3be4.webp")} alt="" />
-                <a href="">
-                  <i
-                    className="fa fa-play i-for-amozesh"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
+                <h4>
+                  <a href="">دوره جامع متخصص php [2022]</a>
+                </h4>
+                <div className="name-and-star flex">
+                  <a href="">
+                    <i className="fa fa-television" aria-hidden="true"></i> آرین
+                    شجاعی
+                  </a>
+                  <img src={require("./kindpng_115096.png")} alt="" />
+                </div>
+                <div className="foot-amozesh flex">
+                  <span>
+                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                  </span>
+                  <span>380,000</span>
+                </div>
+              </li>
+            </SwiperSlide>
+            <SwiperSlide>
+              <li className="li-amozesh li-swiper">
+                <div className="div-img-amozesh">
+                  <img src={require("./cec1e10e3be4.webp")} alt="" />
+                  <a href="">
+                    <i
+                      className="fa fa-play i-for-amozesh"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </div>
 
-              <h4>
-                <a href="">دوره جامع متخصص php [2022]</a>
-              </h4>
-              <div className="name-and-star flex">
-                <a href="">
-                  <i className="fa fa-television" aria-hidden="true"></i> آرین
-                  شجاعی
-                </a>
-                <img src={require("./kindpng_115096.png")} alt="" />
-              </div>
-              <div className="foot-amozesh flex">
-                <span>
-                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                </span>
-                <span>380,000</span>
-              </div>
-            </li></SwiperSlide>
-        <SwiperSlide><li className="li-amozesh li-swiper">
-              <div className="div-img-amozesh">
-                <img src={require("./cec1e10e3be4.webp")} alt="" />
-                <a href="">
-                  <i
-                    className="fa fa-play i-for-amozesh"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
+                <h4>
+                  <a href="">دوره جامع متخصص php [2022]</a>
+                </h4>
+                <div className="name-and-star flex">
+                  <a href="">
+                    <i className="fa fa-television" aria-hidden="true"></i> آرین
+                    شجاعی
+                  </a>
+                  <img src={require("./kindpng_115096.png")} alt="" />
+                </div>
+                <div className="foot-amozesh flex">
+                  <span>
+                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                  </span>
+                  <span>380,000</span>
+                </div>
+              </li>
+            </SwiperSlide>
+            <SwiperSlide>
+              <li className="li-amozesh li-swiper">
+                <div className="div-img-amozesh">
+                  <img src={require("./cec1e10e3be4.webp")} alt="" />
+                  <a href="">
+                    <i
+                      className="fa fa-play i-for-amozesh"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </div>
 
-              <h4>
-                <a href="">دوره جامع متخصص php [2022]</a>
-              </h4>
-              <div className="name-and-star flex">
-                <a href="">
-                  <i className="fa fa-television" aria-hidden="true"></i> آرین
-                  شجاعی
-                </a>
-                <img src={require("./kindpng_115096.png")} alt="" />
-              </div>
-              <div className="foot-amozesh flex">
-                <span>
-                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                </span>
-                <span>380,000</span>
-              </div>
-            </li></SwiperSlide>
-        <SwiperSlide><li className="li-amozesh li-swiper">
-              <div className="div-img-amozesh">
-                <img src={require("./cec1e10e3be4.webp")} alt="" />
-                <a href="">
-                  <i
-                    className="fa fa-play i-for-amozesh"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
+                <h4>
+                  <a href="">دوره جامع متخصص php [2022]</a>
+                </h4>
+                <div className="name-and-star flex">
+                  <a href="">
+                    <i className="fa fa-television" aria-hidden="true"></i> آرین
+                    شجاعی
+                  </a>
+                  <img src={require("./kindpng_115096.png")} alt="" />
+                </div>
+                <div className="foot-amozesh flex">
+                  <span>
+                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                  </span>
+                  <span>380,000</span>
+                </div>
+              </li>
+            </SwiperSlide>
+            <SwiperSlide>
+              <li className="li-amozesh li-swiper">
+                <div className="div-img-amozesh">
+                  <img src={require("./cec1e10e3be4.webp")} alt="" />
+                  <a href="">
+                    <i
+                      className="fa fa-play i-for-amozesh"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </div>
 
-              <h4>
-                <a href="">دوره جامع متخصص php [2022]</a>
-              </h4>
-              <div className="name-and-star flex">
-                <a href="">
-                  <i className="fa fa-television" aria-hidden="true"></i> آرین
-                  شجاعی
-                </a>
-                <img src={require("./kindpng_115096.png")} alt="" />
-              </div>
-              <div className="foot-amozesh flex">
-                <span>
-                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                </span>
-                <span>380,000</span>
-              </div>
-            </li></SwiperSlide>
-        <SwiperSlide><li className="li-amozesh li-swiper">
-              <div className="div-img-amozesh">
-                <img src={require("./cec1e10e3be4.webp")} alt="" />
-                <a href="">
-                  <i
-                    className="fa fa-play i-for-amozesh"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
+                <h4>
+                  <a href="">دوره جامع متخصص php [2022]</a>
+                </h4>
+                <div className="name-and-star flex">
+                  <a href="">
+                    <i className="fa fa-television" aria-hidden="true"></i> آرین
+                    شجاعی
+                  </a>
+                  <img src={require("./kindpng_115096.png")} alt="" />
+                </div>
+                <div className="foot-amozesh flex">
+                  <span>
+                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                  </span>
+                  <span>380,000</span>
+                </div>
+              </li>
+            </SwiperSlide>
+            <SwiperSlide>
+              <li className="li-amozesh li-swiper">
+                <div className="div-img-amozesh">
+                  <img src={require("./cec1e10e3be4.webp")} alt="" />
+                  <a href="">
+                    <i
+                      className="fa fa-play i-for-amozesh"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </div>
 
-              <h4>
-                <a href="">دوره جامع متخصص php [2022]</a>
-              </h4>
-              <div className="name-and-star flex">
-                <a href="">
-                  <i className="fa fa-television" aria-hidden="true"></i> آرین
-                  شجاعی
-                </a>
-                <img src={require("./kindpng_115096.png")} alt="" />
-              </div>
-              <div className="foot-amozesh flex">
-                <span>
-                  <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
-                </span>
-                <span>380,000</span>
-              </div>
-            </li></SwiperSlide>
-      </Swiper>
+                <h4>
+                  <a href="">دوره جامع متخصص php [2022]</a>
+                </h4>
+                <div className="name-and-star flex">
+                  <a href="">
+                    <i className="fa fa-television" aria-hidden="true"></i> آرین
+                    شجاعی
+                  </a>
+                  <img src={require("./kindpng_115096.png")} alt="" />
+                </div>
+                <div className="foot-amozesh flex">
+                  <span>
+                    <i className="fa fa-user-o" aria-hidden="true"></i> 4.913
+                  </span>
+                  <span>380,000</span>
+                </div>
+              </li>
+            </SwiperSlide>
+          </Swiper>
           <div className="footer">
             <ul className="ul-footer">
               <li className="li-footer">
@@ -842,38 +905,107 @@ const Home = () => {
               <li className="li-footer">
                 <h4>دسترسی سریع</h4>
                 <div className="div-footer-1">
-                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش HTML</Link>
-                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش CSS</Link>
-                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش جاوا </Link>
-                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i>  آموزش استرپ</Link>
-                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش ری اکت</Link>
-                  <Link className="link-footer-dastresi" to={"/b"}><i class="fa fa-angle-double-left" aria-hidden="true"></i> آموزش پایتون</Link>
+                  <Link className="link-footer-dastresi" to={"/b"}>
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>{" "}
+                    آموزش HTML
+                  </Link>
+                  <Link className="link-footer-dastresi" to={"/b"}>
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>{" "}
+                    آموزش CSS
+                  </Link>
+                  <Link className="link-footer-dastresi" to={"/b"}>
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>{" "}
+                    آموزش جاوا{" "}
+                  </Link>
+                  <Link className="link-footer-dastresi" to={"/b"}>
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>{" "}
+                    آموزش استرپ
+                  </Link>
+                  <Link className="link-footer-dastresi" to={"/b"}>
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>{" "}
+                    آموزش ری اکت
+                  </Link>
+                  <Link className="link-footer-dastresi" to={"/b"}>
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>{" "}
+                    آموزش پایتون
+                  </Link>
                 </div>
-                <Link className="link-footer-gavanin-darbare" to={'/c'}> قوانین و مقررات</Link>
+                <Link className="link-footer-gavanin-darbare" to={"/c"}>
+                  {" "}
+                  قوانین و مقررات
+                </Link>
                 <br />
                 <br />
-                <Link className="link-footer-gavanin-darbare" to={'/c'}>درباره ما</Link>
-
+                <Link className="link-footer-gavanin-darbare" to={"/c"}>
+                  درباره ما
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="menu-responsiv">
           <ul className="ul-menu-footer">
-            <li> <NavLink style={({isActive})=>{
-              return {backgroundColor:isActive?'#53CEF7':'#F0F2F7',color:isActive?'white':'black'}
-            }} className='navlink-footer' to={'/home'}><i class="fa fa-home" aria-hidden="true"></i></NavLink></li>
-            <li> <NavLink style={({isActive})=>{
-              return {backgroundColor:isActive?'#53CEF7':'#F0F2F7',color:isActive?'white':'black'}
-            }} className='navlink-footer' to={'/Frontend'}><i class="fa fa-code" aria-hidden="true"></i></NavLink></li>
-            <li> <NavLink  style={({isActive})=>{
-              return {backgroundColor:isActive?'#53CEF7':'#F0F2F7',color:isActive?'white':'black'}
-            }} className='navlink-footer' to={'/magalat'}><i class="fa fa-archive" aria-hidden="true"></i></NavLink></li>
-            <li> <NavLink  style={({isActive})=>{
-              return {backgroundColor:isActive?'#53CEF7':'#F0F2F7',color:isActive?'white':'black'}
-            }}   className='navlink-footer' to={'/security'}><i class="fa fa-shield" aria-hidden="true"></i></NavLink></li>
+            <li>
+              {" "}
+              <NavLink
+                style={({ isActive }) => {
+                  return {
+                    backgroundColor: isActive ? "#53CEF7" : "#F0F2F7",
+                    color: isActive ? "white" : "black",
+                  };
+                }}
+                className="navlink-footer"
+                to={"/home"}
+              >
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                style={({ isActive }) => {
+                  return {
+                    backgroundColor: isActive ? "#53CEF7" : "#F0F2F7",
+                    color: isActive ? "white" : "black",
+                  };
+                }}
+                className="navlink-footer"
+                to={"/Frontend"}
+              >
+                <i class="fa fa-code" aria-hidden="true"></i>
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                style={({ isActive }) => {
+                  return {
+                    backgroundColor: isActive ? "#53CEF7" : "#F0F2F7",
+                    color: isActive ? "white" : "black",
+                  };
+                }}
+                className="navlink-footer"
+                to={"/magalat"}
+              >
+                <i class="fa fa-archive" aria-hidden="true"></i>
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                style={({ isActive }) => {
+                  return {
+                    backgroundColor: isActive ? "#53CEF7" : "#F0F2F7",
+                    color: isActive ? "white" : "black",
+                  };
+                }}
+                className="navlink-footer"
+                to={"/security"}
+              >
+                <i class="fa fa-shield" aria-hidden="true"></i>
+              </NavLink>
+            </li>
           </ul>
-
         </div>
       </div>
     </>

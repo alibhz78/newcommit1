@@ -1,5 +1,8 @@
+import Fatherofsabtnam from "./Fatherofsabtnam";
 import React from "react";
+import MahsolatPedar from "./components/MahsolatPedar";
 import "swiper/css/bundle";
+import Favorit from "./components/Favorit";
 import ReactDOM from "react-dom";
 import "./index.css";
 import Home from "./Home";
@@ -7,7 +10,6 @@ import Ferantend from './components/Ferantend'
 import Magalat from './components/Magalat'
 import Security from './components/Security'
 import './IRAN Sans.ttf'
-import Main from './main'
 import Instegram from "./components/Instegram";
 import Gmail from "./components/Gmail";
 import Telegram from "./components/Telegram";
@@ -22,7 +24,7 @@ ReactDOM.render(
     <Route path="/Telegram" element={<Telegram/>}/>
     <Route path="/Gmail" element={<Gmail/>}/>
     <Route path="/Whatsapp" element={<Whatsapp/>}/>
-    <Route path="/Main" element={<Main/>}/>
+    <Route path="/Main" element={<Fatherofsabtnam/>}/>
     <Route path="/Frontend" element={<Ferantend/>}/>
     <Route path="/magalat" element={<Magalat/>}/>
     <Route path="/security" element={<Security/>}/>

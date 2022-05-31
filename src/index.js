@@ -1,6 +1,6 @@
 import Fatherofsabtnam from "./Fatherofsabtnam";
 import React from "react";
-import MahsolatPedar from "./components/MahsolatPedar";
+import Mahsolatpedar from "./components/MahsolatPedar"
 import "swiper/css/bundle";
 import Favorit from "./components/Favorit";
 import ReactDOM from "react-dom";
@@ -28,6 +28,8 @@ ReactDOM.render(
     <Route path="/Frontend" element={<Ferantend/>}/>
     <Route path="/magalat" element={<Magalat/>}/>
     <Route path="/security" element={<Security/>}/>
+    <Route path="/Favorit" element={<Favorit/>}/>
+    <Route path="/doreha" element={<Mahsolatpedar/>}/>
   </Routes>
   </BrowserRouter>
   ,

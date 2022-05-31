@@ -6,14 +6,14 @@ import Mahsolat from "./Mahsolat";
 const MahsolatPedar = () => {
   const [state, setstate] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:8003/posts")
+    axios.get("http://localhost:8008/posts")
       .then((resp) => setstate(resp.data));
   });
   const addtosabad=(id)=>{
     let m=state.filter(
           (f)=>f.id == id
       )
-      axios.post("http://localhost:8003/mahsol",m)
+      axios.post("http://localhost:8008/mahsol/",m[0])
   }
   return (
     <div className="pedar-mahsolatman">

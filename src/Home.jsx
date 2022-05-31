@@ -185,9 +185,9 @@ const Home = () => {
               </ul>
             </div>
             <div className="vorod">
-              <span>
-                <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-              </span>
+      
+                <Link className="vorod-link-1" to={"/favorit"}><i className="fa fa-shopping-cart" aria-hidden="true"></i></Link>
+                
               <span>
                 <Link to={"/Main"}> ورود / ثبت نام</Link>
               </span>
@@ -234,10 +234,7 @@ const Home = () => {
               <h3 className="h3-1">جدیدترین دوره ها</h3>
               <p>سکوی پرتاپ شما به موفقیت</p>
             </div>
-            <a className="dokme-doreha" href="">
-              تمام دوره ها
-              <i className="fa fa-long-arrow-left" aria-hidden="true"></i>
-            </a>
+            <Link className="dokme-doreha" to={"/doreha"}> محصولات <i className="fa fa-long-arrow-left" aria-hidden="true"></i></Link>
           </div>
           <ul className="ul-amozesh flex">
             <li className="li-amozesh">

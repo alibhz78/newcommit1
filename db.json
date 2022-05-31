@@ -25,20 +25,5 @@
       "image": "https://media.imna.ir/d/2021/08/03/4/1718323.jpg"
     }
   ],
-  "mahsol": [
-    {
-      "id": 1,
-      "title": "iphone7",
-      "author": "8.000.000",
-      "image": "https://www.imore.com/sites/imore.com/files/styles/large_wm_brw/public/field/image/2021/09/iphone-13-review-hero.jpeg"
-    },
-    
-      {
-        "id": 2,
-        "title": "samsung s21",
-        "author": "21.000.000",
-        "image": "https://cdn.pocket-lint.com/r/s/970x/assets/images/159604-phones-review-hands-on-samsung-galaxy-s21-fe-5g-image1-bw6avigsg5.JPG"
-      }
-    
-  ]
+  "mahsol": []
 }
